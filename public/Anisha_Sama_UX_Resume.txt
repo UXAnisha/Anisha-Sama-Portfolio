@@ -1,0 +1,70 @@
+========================================================================
+ANISHA SAMA | SENIOR UX DESIGNER & RESEARCHER
+========================================================================
+Email: anishasama8687@gmail.com
+Location: Chicago, IL (Work timezone: America/Chicago)
+Portfolio: https://anishasama.ux
+------------------------------------------------------------------------
+
+PROFESSIONAL SUMMARY
+Senior UX Designer and Researcher specializing in behavioral design, 
+information architecture, and data-driven product strategy. Dedicated 
+to bridging the gap between rigorous cognitive research and high-fidelity 
+minimalist design. Proven track record of de-risking product decisions 
+and shipping products with measurable user engagement and accessibility standards.
+
+------------------------------------------------------------------------
+CORE EXPERTISE & SKILLS
+------------------------------------------------------------------------
+- RESEARCH METHODOLOGIES: User Interviews, Cognitive Walkthroughs, Eye Tracking,
+  Usability Testing, Heuristic Evaluation, A/B Testing, Eye Tracking, Task Analysis
+- DESIGN & CRAFT: High-Fidelity Interface Design, Interactive Prototyping,
+  Design Systems, Grid Systems, Typography, WCAG 2.2 AA Accessibility (A11y)
+- TECHNICAL TOOLKIT: Figma, React, Vite, GSAP ScrollTrigger, Lenis Smooth Scroll,
+  Tailwind CSS, Hotjar Analytics, Optimal Workshop
+
+------------------------------------------------------------------------
+FEATURED CASE STUDIES
+------------------------------------------------------------------------
+
+01. AURA HABIT TRACKER (Behavioral Design)
+------------------------------------------
+Designed a mindful habit-building workspace using cognitive psychology principles.
+- Identified guilt-induced churn models from a sample of 15 deep user interviews.
+- Introduced planned "forgiveness tokens" to mitigate streak abandonment fatigue.
+- METRIC: +64% increase in 90-day active user retention, 45% reduction in anxiety.
+
+02. ZENITH CHECKOUT (Conversion & Interaction Design)
+-----------------------------------------------------
+Consolidated complex e-commerce billing workflows into a single biometric action.
+- Mitigated visual form distraction by hiding global navigation in high-intent states.
+- Re-architected inputs using progressive disclosure grids and inline validations.
+- METRIC: -43 seconds saved per mobile transaction, +28% checkout conversion surge.
+
+03. NOVA HEALTH DASHBOARD (Healthcare IA & Empathetic Design)
+-------------------------------------------------------------
+Engineered a plain-language wellness and physiological chronic care portal.
+- Co-designed alongside 10 chronic disease patients and clinical cardiologists.
+- Substituted alarming red metrics with friendly, conversational status summaries.
+- METRIC: -40% drop in patient dashboard-induced anxiety, 97% self-care compliance.
+
+------------------------------------------------------------------------
+PROFESSIONAL EXPERIENCE
+------------------------------------------------------------------------
+SENIOR PRODUCT DESIGNER & RESEARCHER | Vanguard UX Studios (Chicago)
+2023 - Present
+- Lead research operations, heuristic evaluations, and high-fidelity UI design 
+  for high-profile B2B and consumer web/mobile products.
+- Spearheaded design systems that improved frontend component alignment by 35%.
+
+UX DESIGNER | Chicago digital systems
+2021 - 2023
+- Conducted user interviews and spatial interactive research for smart transportation systems.
+- Executed A/B testing cycles improving signup funnels by 18%.
+
+------------------------------------------------------------------------
+EDUCATION
+------------------------------------------------------------------------
+B.S. in Cognitive Science & Human-Computer Interaction
+University of Illinois at Urbana-Champaign (UIUC)
+========================================================================

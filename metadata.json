@@ -1,0 +1,6 @@
+{
+  "name": "UX Designer & Researcher Portfolio",
+  "description": "An interactive, minimalist portfolio for a UX designer and researcher featuring GSAP ScrollTrigger animations, smooth Lenis scrolling, and a strict black-and-white aesthetic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

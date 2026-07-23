@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <!-- Sky Gradient -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3A82C4" />
+      <stop offset="50%" stop-color="#7BB4E8" />
+      <stop offset="100%" stop-color="#C5E2FA" />
+    </linearGradient>
+
+    <!-- Lawn Gradient -->
+    <linearGradient id="lawnGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ACC232" />
+      <stop offset="40%" stop-color="#8EA920" />
+      <stop offset="100%" stop-color="#678013" />
+    </linearGradient>
+
+    <!-- Lawn Shadow Gradient -->
+    <linearGradient id="shadowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4C6313" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#8EA920" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Sandstone Gradient -->
+    <linearGradient id="stoneGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D1B088" />
+      <stop offset="50%" stop-color="#C29D74" />
+      <stop offset="100%" stop-color="#B08A61" />
+    </linearGradient>
+
+    <!-- Red Roof Gradient -->
+    <linearGradient id="roofGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D45A38" />
+      <stop offset="100%" stop-color="#9C3A20" />
+    </linearGradient>
+  </defs>
+
+  <!-- SKY -->
+  <rect width="1200" height="520" fill="url(#skyGrad)" />
+
+  <!-- DISTANT TREES BACKDROP -->
+  <path d="M 0 460 Q 150 440 300 455 Q 500 430 700 450 Q 900 420 1200 450 L 1200 520 L 0 520 Z" fill="#2D5A27" opacity="0.8" />
+
+  <!-- MAIN BARTON / HERITAGE BUILDING -->
+  <!-- Left Wing Structure -->
+  <g id="leftWing">
+    <!-- Main Wall Base -->
+    <rect x="180" y="340" width="360" height="180" fill="url(#stoneGrad)" stroke="#7A5B3D" stroke-width="1" />
+    <!-- Roof -->
+    <polygon points="180,340 200,310 540,310 540,340" fill="url(#roofGrad)" stroke="#6A2210" stroke-width="1" />
+    <polygon points="260,310 290,275 460,275 480,310" fill="url(#roofGrad)" stroke="#6A2210" stroke-width="1" />
+    
+    <!-- Upper Floor Arcades (Pointed Arches) -->
+    <g fill="#4A3423" stroke="#2B1D12" stroke-width="0.8">
+      <!-- Row of Gothic Arches Upper -->
+      <path d="M 195 380 L 195 355 Q 205 345 215 355 L 215 380 Z" />
+      <path d="M 225 380 L 225 355 Q 235 345 245 355 L 245 380 Z" />
+      <path d="M 255 380 L 255 355 Q 265 345 275 355 L 275 380 Z" />
+      <path d="M 285 380 L 285 355 Q 295 345 305 355 L 305 380 Z" />
+      <path d="M 315 380 L 315 355 Q 325 345 335 355 L 335 380 Z" />
+      <path d="M 345 380 L 345 355 Q 355 345 365 355 L 365 380 Z" />
+      <path d="M 375 380 L 375 355 Q 385 345 395 355 L 395 380 Z" />
+      <path d="M 405 380 L 405 355 Q 415 345 425 355 L 425 380 Z" />
+      <path d="M 435 380 L 435 355 Q 445 345 455 355 L 455 380 Z" />
+      <path d="M 465 380 L 465 355 Q 475 345 485 355 L 485 380 Z" />
+      <path d="M 495 380 L 495 355 Q 505 345 515 355 L 515 380 Z" />
+    </g>
+
+    <!-- Balcony Railing Line -->
+    <rect x="180" y="420" width="360" height="12" fill="#B08F6A" stroke="#5C422A" />
+
+    <!-- Ground Floor Corridor Arches -->
+    <g fill="#3D291A">
+      <path d="M 195 500 L 195 440 Q 205 425 215 440 L 215 500 Z" />
+      <path d="M 225 500 L 225 440 Q 235 425 245 440 L 245 500 Z" />
+      <path d="M 255 500 L 255 440 Q 265 425 275 440 L 275 500 Z" />
+      <path d="M 285 500 L 285 440 Q 295 425 305 440 L 305 500 Z" />
+      <path d="M 315 500 L 315 440 Q 325 425 335 440 L 335 500 Z" />
+      <path d="M 345 500 L 345 440 Q 355 425 365 440 L 365 500 Z" />
+      <path d="M 375 500 L 375 440 Q 385 425 395 440 L 395 500 Z" />
+      <path d="M 405 500 L 405 440 Q 415 425 425 440 L 425 500 Z" />
+      <path d="M 435 500 L 435 440 Q 445 425 455 440 L 455 500 Z" />
+      <path d="M 465 500 L 465 440 Q 475 425 485 440 L 485 500 Z" />
+      <path d="M 495 500 L 495 440 Q 505 425 515 440 L 515 500 Z" />
+    </g>
+  </g>
+
+  <!-- Right Wing / Main Entrance Structure -->
+  <g id="rightWing">
+    <rect x="540" y="330" width="420" height="200" fill="url(#stoneGrad)" stroke="#7A5B3D" stroke-width="1" />
+    
+    <!-- Decorative Parapet Top -->
+    <rect x="540" y="320" width="420" height="10" fill="#B08F6A" />
+    
+    <!-- Upper Windows with Green Wooden Shutters and Red Accents -->
+    <g fill="#1A4D32" stroke="#B83E28" stroke-width="1.5">
+      <rect x="560" y="350" width="22" height="45" rx="3" />
+      <rect x="590" y="350" width="22" height="45" rx="3" />
+      <rect x="620" y="350" width="22" height="45" rx="3" />
+      <rect x="650" y="350" width="22" height="45" rx="3" />
+      <rect x="680" y="350" width="22" height="45" rx="3" />
+      <rect x="710" y="350" width="22" height="45" rx="3" />
+    </g>
+
+    <!-- Corner Pavilion Porch -->
+    <rect x="750" y="320" width="210" height="210" fill="#BA966E" stroke="#684A2E" stroke-width="1" />
+    <!-- Pavilion Upper Balcony Porch Arch -->
+    <path d="M 765 410 L 765 350 Q 860 320 955 350 L 955 410 Z" fill="#2E1C12" />
+    <rect x="765" y="410" width="190" height="12" fill="#B83E28" />
+
+    <!-- Pavilion Ground Floor Arch Entry -->
+    <path d="M 765 520 L 765 440 Q 860 410 955 440 L 955 520 Z" fill="#1C100B" />
+  </g>
+
+  <!-- LAWN AND FOREGROUND GROUND -->
+  <rect x="0" y="520" width="1200" height="280" fill="url(#lawnGrad)" />
+
+  <!-- Shadow under tree on lawn -->
+  <ellipse cx="200" cy="650" rx="350" ry="120" fill="url(#shadowGrad)" />
+
+  <!-- Dirt Path on Bottom Right -->
+  <path d="M 520 800 L 1200 660 L 1200 800 Z" fill="#786550" opacity="0.85" />
+  <path d="M 500 800 L 1200 650" stroke="#5E4E3E" stroke-width="4" opacity="0.6" />
+
+  <!-- Pink Bougainvillea & Green Bushes in Front of Building -->
+  <g id="bushes">
+    <circle cx="720" cy="520" r="25" fill="#1E4D1A" />
+    <circle cx="735" cy="515" r="20" fill="#D6285A" />
+    <circle cx="750" cy="525" r="28" fill="#E63966" />
+    <circle cx="770" cy="520" r="22" fill="#1E4D1A" />
+    <circle cx="800" cy="525" r="30" fill="#E63966" />
+    <circle cx="830" cy="520" r="25" fill="#286022" />
+    <circle cx="860" cy="525" r="20" fill="#D6285A" />
+  </g>
+
+  <!-- FOREGROUND TREE BRANCHES & LEAVES FRAME (Matching Photo) -->
+  <!-- Top Right Foliage -->
+  <g id="topRightFoliage" fill="#0F240D">
+    <path d="M 880 0 Q 950 80 1200 120 L 1200 0 Z" />
+    <path d="M 920 0 C 900 60 980 140 1060 180 C 1120 210 1180 230 1200 240 L 1200 0 Z" />
+    <!-- Leaf Clusters -->
+    <ellipse cx="980" cy="40" rx="35" ry="20" transform="rotate(-20 980 40)" fill="#183B15" />
+    <ellipse cx="1020" cy="80" rx="45" ry="25" transform="rotate(15 1020 80)" fill="#112C0F" />
+    <ellipse cx="1070" cy="120" rx="50" ry="28" transform="rotate(-10 1070 120)" fill="#1C4218" />
+    <ellipse cx="1120" cy="170" rx="55" ry="32" transform="rotate(25 1120 170)" fill="#0F240D" />
+    <ellipse cx="1160" cy="220" rx="45" ry="25" transform="rotate(-15 1160 220)" fill="#163813" />
+  </g>
+
+  <!-- Bottom Left Foreground Leaves -->
+  <g id="bottomLeftFoliage" fill="#183B15">
+    <path d="M 0 350 C 80 380 150 480 180 580 C 210 680 160 780 0 800 Z" fill="#0D210B" />
+    <ellipse cx="60" cy="420" rx="60" ry="30" transform="rotate(35 60 420)" fill="#1C4418" />
+    <ellipse cx="100" cy="500" rx="75" ry="38" transform="rotate(20 100 500)" fill="#143311" />
+    <ellipse cx="130" cy="600" rx="85" ry="42" transform="rotate(-15 130 600)" fill="#23521E" />
+    <ellipse cx="110" cy="710" rx="90" ry="45" transform="rotate(10 110 710)" fill="#0F240D" />
+  </g>
+</svg>

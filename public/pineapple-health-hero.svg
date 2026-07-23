@@ -1,0 +1,240 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F1F5F9" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+
+    <!-- App Primary Blue Gradient -->
+    <linearGradient id="primaryBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#0369A1" />
+    </linearGradient>
+
+    <!-- Card Soft Shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0F172A" flood-opacity="0.12" />
+    </filter>
+
+    <filter id="shadowSm" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="675" fill="url(#bgGrad)" rx="16" />
+
+  <!-- Grid lines background -->
+  <g stroke="#CBD5E1" stroke-width="1" opacity="0.4">
+    <line x1="100" y1="0" x2="100" y2="675" />
+    <line x1="300" y1="0" x2="300" y2="675" />
+    <line x1="500" y1="0" x2="500" y2="675" />
+    <line x1="700" y1="0" x2="700" y2="675" />
+    <line x1="900" y1="0" x2="900" y2="675" />
+    <line x1="1100" y1="0" x2="1100" y2="675" />
+  </g>
+
+  <!-- LEFT MOBILE FRAME (Search & In-Network Provider Discovery) -->
+  <g transform="translate(180, 50)" filter="url(#shadow)">
+    <!-- Phone Outer Body -->
+    <rect x="0" y="0" width="280" height="575" rx="36" fill="#1E293B" />
+    <!-- Screen -->
+    <rect x="8" y="8" width="264" height="559" rx="30" fill="#FAFAF9" />
+
+    <!-- Status Bar -->
+    <rect x="100" y="16" width="80" height="18" rx="9" fill="#0F172A" />
+    
+    <!-- App Header -->
+    <rect x="8" y="44" width="264" height="70" fill="#0284C7" />
+    <text x="24" y="74" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#BAE6FD" letter-spacing="1">PINEAPPLE HEALTH</text>
+    <text x="24" y="96" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Find In-Network Care</text>
+
+    <!-- Search Input Bar -->
+    <rect x="24" y="126" width="232" height="38" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" filter="url(#shadowSm)" />
+    <circle cx="42" cy="145" r="5" fill="none" stroke="#64748B" stroke-width="2" />
+    <line x1="46" y1="149" x2="52" y2="155" stroke="#64748B" stroke-width="2" stroke-linecap="round" />
+    <text x="60" y="149" font-family="system-ui, sans-serif" font-size="12" fill="#64748B">Primary Care, Cardiology...</text>
+
+    <!-- Insurance Filter Tag -->
+    <rect x="24" y="174" width="130" height="24" rx="12" fill="#E0F2FE" stroke="#0284C7" stroke-width="1" />
+    <circle cx="36" cy="186" r="4" fill="#0284C7" />
+    <text x="46" y="190" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#0369A1">BlueCross In-Network</text>
+
+    <!-- Provider Card 1 -->
+    <g transform="translate(24, 210)">
+      <rect x="0" y="0" width="232" height="160" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+      <circle cx="36" cy="36" r="20" fill="#BAE6FD" />
+      <text x="31" y="42" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#0369A1">DR</text>
+
+      <text x="68" y="30" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#0F172A">Dr. Sarah Jenkins, MD</text>
+      <text x="68" y="45" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">Internal Medicine · Northwestern</text>
+      
+      <!-- In Network Badge -->
+      <rect x="68" y="52" width="80" height="18" rx="4" fill="#DCFCE7" />
+      <text x="74" y="64" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#15803D">IN-NETWORK</text>
+
+      <line x1="16" y1="80" x2="216" y2="80" stroke="#F1F5F9" stroke-width="1" />
+
+      <!-- Cost Estimate Row -->
+      <text x="16" y="100" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">Estimated Visit Cost</text>
+      <text x="16" y="118" font-family="system-ui, sans-serif" font-size="15" font-weight="800" fill="#0284C7">$25.00 <tspan font-size="10" font-weight="400" fill="#64748B">(Copay)</tspan></text>
+
+      <!-- Referral Badge -->
+      <rect x="130" y="96" width="86" height="22" rx="6" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1" />
+      <text x="136" y="111" font-family="system-ui, sans-serif" font-size="9" font-weight="600" fill="#475569">No Referral Needed</text>
+
+      <!-- Action button -->
+      <rect x="16" y="128" width="200" height="24" rx="6" fill="#0284C7" />
+      <text x="80" y="144" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">Select Provider</text>
+    </g>
+
+    <!-- Provider Card 2 (Partial) -->
+    <g transform="translate(24, 382)">
+      <rect x="0" y="0" width="232" height="150" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+      <circle cx="36" cy="36" r="20" fill="#FEF3C7" />
+      <text x="31" y="42" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#B45309">DR</text>
+      <text x="68" y="30" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#0F172A">Dr. Marcus Vance, DO</text>
+      <text x="68" y="45" font-family="system-ui, sans-serif" font-size="11" fill="#64748B">Family Medicine · Rush Health</text>
+      
+      <rect x="68" y="52" width="95" height="18" rx="4" fill="#FEE2E2" />
+      <text x="74" y="64" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#B91C1C">OUT-OF-NETWORK</text>
+    </g>
+  </g>
+
+  <!-- CENTER / MAIN MOBILE FRAME (Informed Booking & Cost Transparency) -->
+  <g transform="translate(460, 30)" filter="url(#shadow)">
+    <!-- Phone Body -->
+    <rect x="0" y="0" width="280" height="595" rx="36" fill="#0F172A" />
+    <rect x="8" y="8" width="264" height="579" rx="30" fill="#FFFFFF" />
+
+    <!-- Notch -->
+    <rect x="100" y="16" width="80" height="18" rx="9" fill="#0F172A" />
+
+    <!-- Top Header Navigation -->
+    <rect x="8" y="44" width="264" height="50" fill="#FFFFFF" />
+    <text x="24" y="74" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#0F172A">Confirm Appointment</text>
+    <line x1="8" y1="94" x2="272" y2="94" stroke="#F1F5F9" stroke-width="1" />
+
+    <!-- Step Progress Bar -->
+    <g transform="translate(24, 106)">
+      <rect x="0" y="0" width="232" height="4" rx="2" fill="#E2E8F0" />
+      <rect x="0" y="0" width="160" height="4" rx="2" fill="#0284C7" />
+    </g>
+
+    <!-- Provider Overview Card -->
+    <g transform="translate(24, 120)">
+      <rect x="0" y="0" width="232" height="74" rx="12" fill="#F8FAFC" stroke="#E2E8F0" opacity="0.9" />
+      <circle cx="30" cy="37" r="18" fill="#BAE6FD" />
+      <text x="25" y="42" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#0369A1">DR</text>
+      <text x="58" y="32" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#0F172A">Dr. Sarah Jenkins, MD</text>
+      <text x="58" y="46" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">Tue, Oct 24 · 10:30 AM</text>
+      <text x="58" y="58" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#0284C7">676 N St Clair St, Chicago</text>
+    </g>
+
+    <!-- Insurance & Cost Transparency Breakdown Box -->
+    <g transform="translate(24, 206)">
+      <rect x="0" y="0" width="232" height="175" rx="14" fill="#F0F9FF" stroke="#BAE6FD" stroke-width="1.5" />
+      <text x="16" y="24" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0369A1" letter-spacing="0.5">COST &amp; COVERAGE ESTIMATE</text>
+      
+      <g transform="translate(16, 38)">
+        <text x="0" y="12" font-family="system-ui, sans-serif" font-size="11" fill="#475569">Insurance Provider</text>
+        <text x="200" y="12" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#0F172A" text-anchor="end">BCBS PPO</text>
+
+        <text x="0" y="32" font-family="system-ui, sans-serif" font-size="11" fill="#475569">Network Status</text>
+        <text x="200" y="32" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#16A34A" text-anchor="end">In-Network ✓</text>
+
+        <text x="0" y="52" font-family="system-ui, sans-serif" font-size="11" fill="#475569">Referral Required</text>
+        <text x="200" y="52" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#0F172A" text-anchor="end">No</text>
+
+        <text x="0" y="72" font-family="system-ui, sans-serif" font-size="11" fill="#475569">Standard Visit Rate</text>
+        <text x="200" y="72" font-family="system-ui, sans-serif" font-size="11" fill="#64748B" text-anchor="end">$220.00</text>
+
+        <text x="0" y="92" font-family="system-ui, sans-serif" font-size="11" fill="#475569">Plan Coverage Discount</text>
+        <text x="200" y="92" font-family="system-ui, sans-serif" font-size="11" fill="#16A34A" text-anchor="end">-$195.00</text>
+
+        <line x1="0" y1="104" x2="200" y2="104" stroke="#BAE6FD" stroke-width="1" />
+
+        <text x="0" y="124" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#0F172A">Estimated Out-of-Pocket</text>
+        <text x="200" y="124" font-family="system-ui, sans-serif" font-size="15" font-weight="800" fill="#0284C7" text-anchor="end">$25.00</text>
+      </g>
+    </g>
+
+    <!-- Patient Notice Banner -->
+    <g transform="translate(24, 392)">
+      <rect x="0" y="0" width="232" height="48" rx="10" fill="#FEF3C7" stroke="#FCD34D" stroke-width="1" />
+      <text x="14" y="20" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#92400E">Pre-Appointment Form Required</text>
+      <text x="14" y="36" font-family="system-ui, sans-serif" font-size="9" fill="#78350F">Complete medical history 24 hrs prior to visit.</text>
+    </g>
+
+    <!-- Primary Action Button -->
+    <g transform="translate(24, 452)">
+      <rect x="0" y="0" width="232" height="44" rx="12" fill="url(#primaryBlue)" />
+      <text x="116" y="27" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">Book Appointment ($25.00)</text>
+    </g>
+
+    <!-- Navigation Bar Footer -->
+    <g transform="translate(8, 525)">
+      <line x1="0" y1="0" x2="264" y2="0" stroke="#F1F5F9" stroke-width="1" />
+      <circle cx="50" cy="25" r="10" fill="#0284C7" />
+      <circle cx="132" cy="25" r="10" fill="#CBD5E1" />
+      <circle cx="214" cy="25" r="10" fill="#CBD5E1" />
+    </g>
+  </g>
+
+  <!-- RIGHT MOBILE FRAME (Records & Confirmation Hub) -->
+  <g transform="translate(740, 50)" filter="url(#shadow)">
+    <!-- Phone Body -->
+    <rect x="0" y="0" width="280" height="575" rx="36" fill="#1E293B" />
+    <rect x="8" y="8" width="264" height="559" rx="30" fill="#FAFAF9" />
+
+    <!-- Notch -->
+    <rect x="100" y="16" width="80" height="18" rx="9" fill="#0F172A" />
+
+    <!-- Confirmation Header -->
+    <g transform="translate(24, 54)">
+      <circle cx="24" cy="24" r="22" fill="#DCFCE7" />
+      <path d="M16 24 L21 29 L32 18" fill="none" stroke="#16A34A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="58" y="20" font-family="system-ui, sans-serif" font-size="14" font-weight="800" fill="#0F172A">Appointment Confirmed</text>
+      <text x="58" y="36" font-family="system-ui, sans-serif" font-size="10" fill="#16A34A" font-weight="600">Confirmation #PH-88492</text>
+    </g>
+
+    <!-- Calendar Sync Card -->
+    <g transform="translate(24, 120)">
+      <rect x="0" y="0" width="232" height="70" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+      <text x="16" y="24" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0F172A">Calendar Integration</text>
+      <text x="16" y="40" font-family="system-ui, sans-serif" font-size="10" fill="#64748B">Synced with Google Calendar</text>
+      <rect x="16" y="46" width="110" height="18" rx="4" fill="#E0F2FE" />
+      <text x="22" y="58" font-family="system-ui, sans-serif" font-size="9" font-weight="600" fill="#0369A1">Reminder set 2 hrs prior</text>
+    </g>
+
+    <!-- Patient Records & Claims Section -->
+    <g transform="translate(24, 204)">
+      <text x="0" y="14" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#64748B" letter-spacing="0.5">HEALTHCARE RECORDS &amp; CLAIMS</text>
+      
+      <!-- Record Item 1 -->
+      <g transform="translate(0, 26)">
+        <rect x="0" y="0" width="232" height="52" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+        <rect x="12" y="12" width="28" height="28" rx="6" fill="#F1F5F9" />
+        <text x="20" y="30" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#475569">PDF</text>
+        <text x="48" y="24" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0F172A">Pre-Visit Questionnaire</text>
+        <text x="48" y="38" font-family="system-ui, sans-serif" font-size="9" fill="#16A34A">Ready to fill</text>
+      </g>
+
+      <!-- Record Item 2 -->
+      <g transform="translate(0, 88)">
+        <rect x="0" y="0" width="232" height="52" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+        <rect x="12" y="12" width="28" height="28" rx="6" fill="#E0F2FE" />
+        <text x="18" y="30" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0369A1">INS</text>
+        <text x="48" y="24" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0F172A">Insurance Claim #9921</text>
+        <text x="48" y="38" font-family="system-ui, sans-serif" font-size="9" fill="#0284C7">Pending Processing</text>
+      </g>
+    </g>
+
+    <!-- Location & Directions Button -->
+    <g transform="translate(24, 380)">
+      <rect x="0" y="0" width="232" height="40" rx="10" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1" />
+      <text x="116" y="25" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#0F172A" text-anchor="middle">📍 Get Directions (Northwestern)</text>
+    </g>
+  </g>
+</svg>

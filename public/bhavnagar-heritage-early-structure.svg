@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 680" width="100%" height="100%">
+  <defs>
+    <!-- Gradients & Patterns -->
+    <linearGradient id="navBarGradW" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3D141C" />
+      <stop offset="100%" stop-color="#2D0D14" />
+    </linearGradient>
+
+    <linearGradient id="paperBgW" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5ECE0" />
+      <stop offset="50%" stop-color="#EBE0C8" />
+      <stop offset="100%" stop-color="#E5D8BC" />
+    </linearGradient>
+
+    <linearGradient id="innerCardBgW" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FAF5E8" />
+      <stop offset="100%" stop-color="#F3EAD5" />
+    </linearGradient>
+
+    <linearGradient id="goldHighlightW" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5D883" />
+      <stop offset="50%" stop-color="#D8B14E" />
+      <stop offset="100%" stop-color="#B38A28" />
+    </linearGradient>
+
+    <filter id="cardShadowW" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#3D141C" flood-opacity="0.10" />
+    </filter>
+
+    <filter id="mag3dShadowW" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="14" dy="18" stdDeviation="12" flood-color="#1A0508" flood-opacity="0.32" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1600" height="680" fill="url(#paperBgW)" />
+
+  <!-- Full Wide Architectural Etching Sketch - Clock Tower Left -->
+  <g opacity="0.22" stroke="#6E5239" stroke-width="1.3" fill="none">
+    <!-- Clock Tower Body & Dome -->
+    <path d="M 120 680 L 120 220 L 140 170 L 140 90 L 180 40 L 220 90 L 220 170 L 240 220 L 240 680 Z" />
+    <path d="M 140 170 L 220 170 M 140 220 L 220 220 M 120 320 L 240 320 M 120 440 L 240 440 M 120 560 L 240 560" />
+    <circle cx="180" cy="130" r="28" stroke-width="1.8" />
+    <circle cx="180" cy="130" r="22" stroke-width="1" stroke-dasharray="2 2" />
+    <path d="M 180 108 L 180 130 L 194 130" stroke-width="1.5" />
+    
+    <!-- Fine Structural Details & Arches -->
+    <path d="M 150 260 Q 180 230 210 260 L 210 320 L 150 320 Z" />
+    <path d="M 150 380 Q 180 350 210 380 L 210 440 L 150 440 Z" />
+    <path d="M 150 500 Q 180 470 210 500 L 210 560 L 150 560 Z" />
+    
+    <!-- Side Wings -->
+    <path d="M 20 680 L 20 420 L 120 420 M 240 420 L 340 420 L 340 680" />
+    <path d="M 40 420 Q 70 390 100 420 L 100 680" />
+    <path d="M 260 420 Q 290 390 320 420 L 320 680" />
+  </g>
+
+  <!-- Full Wide Architectural Etching Sketch - Palace Right -->
+  <g opacity="0.22" stroke="#6E5239" stroke-width="1.3" fill="none">
+    <!-- Palace Main Dome & Cupola -->
+    <path d="M 1360 680 L 1360 280 Q 1440 160 1520 280 L 1520 680 Z" />
+    <path d="M 1380 280 L 1500 280 M 1360 380 L 1520 380 M 1360 500 L 1520 500" />
+    <path d="M 1440 160 L 1440 90 M 1425 90 L 1455 90 M 1440 90 L 1440 50" stroke-width="1.8" />
+    
+    <!-- Arches & Windows -->
+    <path d="M 1400 330 Q 1440 300 1480 330 L 1480 380 L 1400 380 Z" />
+    <path d="M 1400 430 Q 1440 400 1480 430 L 1480 500 L 1400 500 Z" />
+
+    <!-- Flanking Arcade -->
+    <path d="M 1200 680 L 1200 420 L 1360 420 M 1520 420 L 1600 420" />
+    <path d="M 1220 420 Q 1260 390 1300 420 L 1300 680" />
+  </g>
+
+  <!-- TOP BURGUNDY NAVIGATION BAR -->
+  <rect x="0" y="0" width="1600" height="52" fill="url(#navBarGradW)" />
+  
+  <g font-family="'Times New Roman', serif" font-size="13" font-weight="600" letter-spacing="1.5" text-anchor="middle">
+    <text x="520" y="32" fill="#EAD9C2">HOME</text>
+    <text x="620" y="32" fill="#EAD9C2">PROTECT</text>
+    <text x="730" y="32" fill="#EAD9C2">PRESERVE</text>
+    
+    <!-- Active Highlight "PROMOTE" -->
+    <text x="840" y="32" fill="#F3D379" font-weight="700">PROMOTE</text>
+    <line x1="810" y1="38" x2="870" y2="38" stroke="#F3D379" stroke-width="2" />
+
+    <text x="940" y="32" fill="#EAD9C2">SHOP</text>
+    <text x="1030" y="32" fill="#EAD9C2">CONTACT</text>
+
+    <!-- User / Login -->
+    <g transform="translate(1120, 21)">
+      <circle cx="8" cy="8" r="7.5" stroke="#EAD9C2" stroke-width="1.2" fill="none" />
+      <circle cx="8" cy="6" r="2.5" fill="#EAD9C2" />
+      <path d="M 3 13 C 3 10, 13 10, 13 13" stroke="#EAD9C2" stroke-width="1.2" fill="none" />
+      <text x="22" y="11" fill="#EAD9C2" font-size="11" text-anchor="start">Log In</text>
+    </g>
+  </g>
+
+  <!-- CENTER PARCHMENT CARD WITH STITCHED BORDER -->
+  <g filter="url(#cardShadowW)">
+    <rect x="410" y="76" width="780" height="425" rx="8" fill="url(#innerCardBgW)" stroke="#D8C7A5" stroke-width="1.5" />
+    <rect x="418" y="84" width="764" height="409" rx="6" fill="none" stroke="#C4B08B" stroke-dasharray="4 3" stroke-width="1" opacity="0.75" />
+  </g>
+
+  <!-- CARD CONTENT -->
+  <!-- Title & Flourish -->
+  <text x="800" y="126" font-family="'Georgia', serif" font-size="32" fill="#3D141C" font-weight="400" text-anchor="middle" letter-spacing="0.5">
+    Bhavnagar Heritage Magazine
+  </text>
+  
+  <!-- Fine Ornamental Flourish Line -->
+  <g stroke="#B89552" stroke-width="1" fill="none" opacity="0.85">
+    <line x1="690" y1="144" x2="765" y2="144" />
+    <circle cx="770" cy="144" r="2" fill="#B89552" />
+    <path d="M 774 144 L 800 139 L 826 144 L 800 149 Z" fill="#B89552" />
+    <circle cx="830" cy="144" r="2" fill="#B89552" />
+    <line x1="835" y1="144" x2="910" y2="144" />
+  </g>
+
+  <!-- Subtitle -->
+  <text x="800" y="168" font-family="'Georgia', serif" font-size="15" font-style="italic" fill="#6B422B" text-anchor="middle">
+    Stories that keep a city alive.
+  </text>
+
+  <!-- 3D MAGAZINE MOCKUP ON LEFT SIDE OF CARD -->
+  <g transform="translate(535, 186)" filter="url(#mag3dShadowW)">
+    <!-- Magazine Base/Spine Perspective -->
+    <path d="M 0 0 L 140 -12 L 140 248 L 0 260 Z" fill="#2A0B10" />
+    
+    <!-- Magazine Front Cover -->
+    <rect x="0" y="0" width="140" height="258" rx="2" fill="#FAF5EB" stroke="#C2AC82" stroke-width="1" />
+    
+    <!-- Cover Banner Top -->
+    <text x="70" y="24" font-family="'Georgia', serif" font-size="8" font-weight="bold" fill="#8C6827" text-anchor="middle" letter-spacing="1">BHAVNAGAR</text>
+    <text x="70" y="46" font-family="'Georgia', serif" font-size="22" font-weight="bold" fill="#3D141C" text-anchor="middle" letter-spacing="1">Heritage</text>
+
+    <text x="70" y="56" font-family="'Arial', sans-serif" font-size="5" fill="#7A6242" text-anchor="middle">VOL 30 | ISSUE 25 | AUG 2026</text>
+    <text x="70" y="62" font-family="'Arial', sans-serif" font-size="4" font-weight="bold" fill="#3D141C" text-anchor="middle" letter-spacing="0.5">PROTECT · PRESERVE · PROMOTE</text>
+
+    <!-- Cover Collage Grid of Mini Covers -->
+    <g transform="translate(22, 70)">
+      <rect x="0" y="0" width="28" height="36" fill="#3D141C" rx="1" />
+      <rect x="32" y="0" width="28" height="36" fill="#7A221E" rx="1" />
+      <rect x="64" y="0" width="28" height="36" fill="#234232" rx="1" />
+
+      <rect x="16" y="22" width="28" height="36" fill="#8C5B27" rx="1" stroke="#FAF5EB" stroke-width="1" />
+      <rect x="48" y="22" width="28" height="36" fill="#1C3854" rx="1" stroke="#FAF5EB" stroke-width="1" />
+
+      <rect x="0" y="46" width="28" height="36" fill="#6B2E1E" rx="1" />
+      <rect x="32" y="46" width="28" height="36" fill="#2E4A38" rx="1" />
+      <rect x="64" y="46" width="28" height="36" fill="#5C2138" rx="1" />
+
+      <rect x="16" y="68" width="28" height="36" fill="#1A3326" rx="1" stroke="#FAF5EB" stroke-width="1" />
+      <rect x="48" y="68" width="28" height="36" fill="#8C3A27" rx="1" stroke="#FAF5EB" stroke-width="1" />
+    </g>
+
+    <!-- Gold Anniversary Ribbon at Bottom -->
+    <rect x="-4" y="218" width="148" height="24" fill="url(#goldHighlightW)" rx="2" />
+    <text x="70" y="234" font-family="'Georgia', serif" font-size="10.5" font-weight="bold" fill="#21080C" text-anchor="middle" letter-spacing="1.5">2 YEARS ANNIVERSARY</text>
+  </g>
+
+  <!-- RIGHT SIDE HEADING IN CARD -->
+  <g transform="translate(740, 250)">
+    <text x="180" y="0" font-family="'Georgia', serif" font-size="24" font-style="italic" fill="#3D141C" text-anchor="middle">
+      Celebrating two
+    </text>
+    <text x="180" y="34" font-family="'Georgia', serif" font-size="24" font-style="italic" fill="#3D141C" text-anchor="middle">
+      years of Bhavnagar
+    </text>
+    <text x="180" y="68" font-family="'Georgia', serif" font-size="24" font-style="italic" fill="#3D141C" text-anchor="middle">
+      Heritage Magazine
+    </text>
+  </g>
+
+  <!-- BOTTOM PARAGRAPH ON WARM PARCHMENT CANVAS -->
+  <g font-family="'Georgia', serif" font-size="15" font-style="italic" fill="#4A2E20" text-anchor="middle">
+    <text x="800" y="555">
+      A journey of preserving stories, people, places, and traditions that shape the city’s identity. This anniversary issue honors the voices
+    </text>
+    <text x="800" y="582">
+      and memories that have brought Bhavnagar’s heritage to life, while looking ahead to the stories still waiting to be shared.
+    </text>
+  </g>
+
+</svg>

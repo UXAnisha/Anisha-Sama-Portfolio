@@ -228,7 +228,7 @@ export default function Navbar({ currentPath, onNavigate }: NavbarProps) {
   };
 
   const navItems = [
-    { id: "about", label: "ME.", path: "/about" },
+    { id: "about", label: "ABOUT", path: "/about" },
     { id: "projects", label: "WORK", path: "/#projects" },
     { id: "connect", label: "REACH OUT", path: "/#connect" },
   ];

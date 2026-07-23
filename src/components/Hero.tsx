@@ -371,14 +371,17 @@ export default function Hero({ onNavigate }: HeroProps) {
   useEffect(() => {
     if (!heroWrapperRef.current || !scrollIndicatorRef.current) return;
 
-    const ctx = gsap.context(() => {
+    const mm = gsap.matchMedia();
+
+    // Desktop layout (>= 768px): 150vh total scroll distance for complete hero experience
+    mm.add("(min-width: 768px)", () => {
       const progressObj = { value: 0 };
 
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: heroWrapperRef.current,
           start: "top top",
-          end: "bottom top",
+          end: "+=150vh",
           scrub: 0.5,
           pin: true,
           anticipatePin: 1,
@@ -418,20 +421,70 @@ export default function Hero({ onNavigate }: HeroProps) {
           });
         }
       }
-    }, heroWrapperRef);
+    });
 
-    return () => ctx.revert();
+    // Mobile layout (< 768px): concise 45vh scroll distance close to one viewport
+    mm.add("(max-width: 767px)", () => {
+      const progressObj = { value: 0 };
+
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: heroWrapperRef.current,
+          start: "top top",
+          end: "+=45vh",
+          scrub: 0.5,
+          pin: true,
+          anticipatePin: 1,
+          invalidateOnRefresh: true,
+        },
+      });
+
+      tl.to(
+        progressObj,
+        {
+          value: 1,
+          ease: "none",
+          onUpdate: () => {
+            setScrollProgress(progressObj.value);
+          },
+        },
+        0
+      ).to(
+        scrollIndicatorRef.current,
+        {
+          opacity: 0,
+          y: 20,
+          ease: "none",
+        },
+        0
+      );
+
+      if (scrollIndicatorRef.current) {
+        const arrow = scrollIndicatorRef.current.querySelector(".arrow-bounce");
+        if (arrow) {
+          gsap.to(arrow, {
+            y: 8,
+            repeat: -1,
+            yoyo: true,
+            duration: 1.2,
+            ease: "power1.inOut",
+          });
+        }
+      }
+    });
+
+    return () => mm.revert();
   }, []);
 
   return (
     <div
       ref={heroWrapperRef}
       id="hero"
-      className="relative w-full h-[220vh] bg-[#0B0B0A]"
+      className="relative w-full h-screen bg-[#0B0B0A] overflow-hidden"
     >
       <div
         ref={stickyContainerRef}
-        className="sticky top-0 h-screen w-full overflow-hidden flex select-none"
+        className="relative h-full w-full overflow-hidden flex select-none"
       >
         {/* DESKTOP SPLIT LAYOUT (>= 768px) */}
         <div className="hidden md:flex w-full h-full relative">

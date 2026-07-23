@@ -1,10 +1,85 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "motion/react";
-import { ArrowLeft, ArrowRight, ExternalLink } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import ContactSection from "./ContactSection";
 
-interface RowData {
+interface ExperienceData {
+  id: string;
+  num: string;
+  keyword: string;
+  role: string;
+  organization: string;
+  dates: string;
+  employmentType?: string;
+  location?: string;
+  description: string;
+  accentColor: string;
+}
+
+const EXPERIENCES: ExperienceData[] = [
+  {
+    id: "raise-lab",
+    num: "01",
+    keyword: "RESEARCH",
+    role: "Graduate Research Assistant",
+    organization:
+      "RAISE Lab (Responsible AI Systems and Societal Experiences) · DePaul University",
+    dates: "Dec 2025 – Present",
+    description:
+      "Contributing to responsible AI research examining how generative AI interfaces can influence user trust, autonomy, and decision-making.",
+    accentColor: "#C9B8E8",
+  },
+  {
+    id: "content",
+    num: "02",
+    keyword: "CONTENT",
+    role: "Content Strategist and Writer",
+    organization: "Bhavnagar Heritage",
+    dates: "Feb 2022 – 2025",
+    description:
+      "Developed cultural and heritage content by transforming research into accessible stories, publications, and digital narratives.",
+    accentColor: "#F3C969",
+  },
+  {
+    id: "intach",
+    num: "03",
+    keyword: "COMMUNICATION",
+    role: "Visual Communication Designer",
+    organization: "Indian National Trust for Art and Cultural Heritage (INTACH)",
+    dates: "2022 – 2025",
+    description:
+      "Created visual communication materials for cultural and architectural heritage initiatives, including publications, exhibitions, awareness campaigns, and public-facing content.",
+    accentColor: "#F37B5F",
+  },
+  {
+    id: "energy",
+    num: "04",
+    keyword: "ENERGY",
+    role: "Solar Thermal Energy",
+    organization: "CSIR-CSMCRI (Central Salt and Marine Chemical Research Institute)",
+    dates: "2024",
+    employmentType: "Internship",
+    location: "Bhavnagar, Gujarat, India · On-site",
+    description:
+      "Supported work related to solar thermal energy within a scientific research environment.",
+    accentColor: "#8CCFD3",
+  },
+  {
+    id: "ux-design",
+    num: "05",
+    keyword: "UX DESIGN",
+    role: "User Experience Designer",
+    organization: "The Seven IT Solutions (EINSCO)",
+    dates: "Feb 2021 – Jan 2022",
+    employmentType: "Full-time",
+    description:
+      "Worked on user experience design for digital products by supporting interface design, user flows, and the organization of product information.",
+    accentColor: "#A9C68E",
+  },
+];
+
+interface HobbyRowData {
   id: string;
   num: string;
   title: string;
@@ -20,7 +95,7 @@ interface RowData {
   rowType: "writer" | "museums" | "pizza" | "paddleboarding" | "hiking" | "listening";
 }
 
-const ROWS: RowData[] = [
+const HOBBY_ROWS: HobbyRowData[] = [
   {
     id: "writer",
     num: "01",
@@ -152,8 +227,7 @@ export default function AboutPage() {
     }, 150);
   };
 
-  // Render subject-specific motion vector details
-  const renderSubjectMotion = (type: RowData["rowType"]) => {
+  const renderSubjectMotion = (type: HobbyRowData["rowType"]) => {
     switch (type) {
       case "writer":
         return (
@@ -251,6 +325,108 @@ export default function AboutPage() {
     }
   };
 
+  const renderExperienceSVG = (id: string, accentColor: string) => {
+    if (prefersReducedMotion) return null;
+
+    if (id === "raise-lab") {
+      return (
+        <div
+          aria-hidden="true"
+          className="absolute right-4 md:right-12 top-1/2 -translate-y-1/2 pointer-events-none hidden sm:block opacity-40 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <svg className="w-28 h-20" viewBox="0 0 120 90" fill="none">
+            <path
+              d="M 10 45 L 45 25 L 85 25"
+              stroke={accentColor}
+              strokeWidth="1.5"
+              className="transition-all duration-500"
+            />
+            <path
+              d="M 45 25 L 85 65"
+              stroke={accentColor}
+              strokeWidth="1.2"
+              className="transition-all duration-500 ease-out group-hover:translate-x-1"
+            />
+            <path
+              d="M 10 45 L 45 65 L 100 65"
+              stroke={accentColor}
+              strokeWidth="1.2"
+              className="transition-all duration-500 ease-out group-hover:-translate-x-1"
+            />
+            <circle cx="10" cy="45" r="3.5" fill={accentColor} className="transition-transform duration-400 group-hover:-translate-x-1" />
+            <circle cx="45" cy="25" r="3" fill={accentColor} className="transition-transform duration-400 group-hover:-translate-y-1" />
+            <circle cx="85" cy="25" r="3" fill={accentColor} className="transition-transform duration-400 group-hover:translate-x-2" />
+            <circle cx="45" cy="65" r="3" fill={accentColor} className="transition-transform duration-400 group-hover:translate-y-1" />
+            <circle cx="100" cy="65" r="3.5" fill={accentColor} className="transition-transform duration-400 group-hover:translate-x-2" />
+          </svg>
+        </div>
+      );
+    }
+
+    if (id === "content") {
+      return (
+        <div
+          aria-hidden="true"
+          className="absolute right-4 md:right-12 top-1/2 -translate-y-1/2 pointer-events-none hidden sm:block opacity-40 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <svg className="w-28 h-20" viewBox="0 0 120 80" fill="none">
+            <line x1="10" y1="20" x2="100" y2="20" stroke={accentColor} strokeWidth="1.5" className="transition-transform duration-500 group-hover:translate-x-2" />
+            <line x1="10" y1="36" x2="80" y2="36" stroke={accentColor} strokeWidth="1.2" strokeDasharray="3 3" className="transition-transform duration-500 group-hover:translate-x-3" />
+            <line x1="10" y1="52" x2="95" y2="52" stroke={accentColor} strokeWidth="1.2" className="transition-transform duration-500 group-hover:translate-x-1" />
+          </svg>
+        </div>
+      );
+    }
+
+    if (id === "intach") {
+      return (
+        <div
+          aria-hidden="true"
+          className="absolute right-4 md:right-12 top-1/2 -translate-y-1/2 pointer-events-none hidden sm:block opacity-40 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <svg className="w-28 h-20" viewBox="0 0 120 80" fill="none">
+            <rect x="15" y="15" width="50" height="50" stroke={accentColor} strokeWidth="1.2" className="transition-transform duration-500 group-hover:-translate-x-2 group-hover:-translate-y-1" />
+            <rect x="40" y="25" width="55" height="40" stroke={accentColor} strokeWidth="1.2" strokeDasharray="4 3" className="transition-transform duration-500 group-hover:translate-x-2 group-hover:translate-y-1" />
+          </svg>
+        </div>
+      );
+    }
+
+    if (id === "energy") {
+      return (
+        <div
+          aria-hidden="true"
+          className="absolute right-4 md:right-12 top-1/2 -translate-y-1/2 pointer-events-none hidden sm:block opacity-40 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <svg className="w-28 h-20" viewBox="0 0 120 80" fill="none">
+            <path d="M 20 60 A 40 40 0 0 1 100 60" stroke={accentColor} strokeWidth="1.5" className="transition-transform duration-500 group-hover:-translate-y-1" />
+            <line x1="60" y1="10" x2="60" y2="25" stroke={accentColor} strokeWidth="1.2" className="transition-transform duration-400 group-hover:-translate-y-1" />
+            <line x1="30" y1="25" x2="40" y2="33" stroke={accentColor} strokeWidth="1.2" className="transition-transform duration-400 group-hover:-translate-x-1" />
+            <line x1="90" y1="25" x2="80" y2="33" stroke={accentColor} strokeWidth="1.2" className="transition-transform duration-400 group-hover:translate-x-1" />
+          </svg>
+        </div>
+      );
+    }
+
+    if (id === "ux-design") {
+      return (
+        <div
+          aria-hidden="true"
+          className="absolute right-4 md:right-12 top-1/2 -translate-y-1/2 pointer-events-none hidden sm:block opacity-40 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <svg className="w-28 h-20" viewBox="0 0 120 80" fill="none">
+            <rect x="10" y="15" width="35" height="25" rx="3" stroke={accentColor} strokeWidth="1.2" className="transition-transform duration-400 group-hover:-translate-x-1" />
+            <rect x="65" y="15" width="45" height="25" rx="3" stroke={accentColor} strokeWidth="1.2" className="transition-transform duration-400 group-hover:translate-x-1" />
+            <path d="M 45 28 L 65 28" stroke={accentColor} strokeWidth="1.2" strokeDasharray="2 2" className="transition-all duration-300" />
+            <rect x="25" y="50" width="70" height="18" rx="3" stroke={accentColor} strokeWidth="1.2" className="transition-transform duration-400 group-hover:translate-y-1" />
+          </svg>
+        </div>
+      );
+    }
+
+    return null;
+  };
+
   const headingPhrases = ["A few things ", "that make me, ", "me."];
 
   return (
@@ -259,13 +435,13 @@ export default function AboutPage() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -12 }}
       transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
-      className="min-h-screen bg-[#FAFAF7] text-[#111111] pt-28 md:pt-36 pb-20 relative z-10 font-sans selection:bg-[#111111] selection:text-white overflow-x-hidden"
+      className="min-h-screen bg-[#FAFAF7] text-[#111111] pt-28 md:pt-36 pb-20 relative z-10 font-sans selection:bg-[#111111] selection:text-[#FAFAF7] overflow-x-hidden"
     >
       {/* Floating Desktop Custom Cursor Label for Linked Rows */}
       {!prefersReducedMotion && !isMobile && activeCursorLabel && (
         <div
           aria-hidden="true"
-          className="fixed pointer-events-none z-[100] px-3.5 py-1.5 rounded-full bg-[#111111] text-white font-sans text-[10px] font-bold uppercase tracking-[0.2em] shadow-lg -translate-x-1/2 -translate-y-1/2 transition-transform duration-75 ease-out"
+          className="fixed pointer-events-none z-[100] px-3.5 py-1.5 rounded-full bg-[#111111] text-[#FAFAF7] font-sans text-[10px] font-bold uppercase tracking-[0.2em] shadow-lg -translate-x-1/2 -translate-y-1/2 transition-transform duration-75 ease-out"
           style={{
             left: `${cursorPos.x}px`,
             top: `${cursorPos.y}px`,
@@ -287,7 +463,7 @@ export default function AboutPage() {
           </button>
         </nav>
 
-        {/* SECTION INTRODUCTION */}
+        {/* 1. ME. HERO SECTION */}
         <header className="space-y-3 max-w-3xl">
           <span className="font-sans text-[10px] sm:text-xs uppercase tracking-[0.35em] text-[#686868] font-bold block">
             BEYOND THE PORTFOLIO
@@ -313,15 +489,151 @@ export default function AboutPage() {
             ))}
           </h1>
 
-          <p className="font-sans text-sm sm:text-base md:text-lg text-[#555550] leading-relaxed font-light pt-2">
+          <p className="font-sans text-sm sm:text-base md:text-lg text-[#555555] leading-relaxed font-light pt-2">
             Stories I write, places I return to, and things I rarely say no to.
           </p>
         </header>
 
-        {/* FULL-WIDTH STACKED EDITORIAL ROWS */}
-        <section aria-label="A Personal Index - Beyond the Portfolio" className="pt-4">
+        {/* 2. EXPERIENCE SECTION */}
+        <section aria-label="Experience Index" className="pt-4 space-y-6">
+          <div className="space-y-2 max-w-3xl border-b border-[#D9D9D4] pb-5">
+            <span className="font-sans text-[10px] sm:text-xs uppercase tracking-[0.35em] text-[#686868] font-bold block">
+              EXPERIENCE
+            </span>
+            <h2 className="font-serif font-bold text-2xl sm:text-3xl md:text-4xl tracking-tight text-[#111111]">
+              Where I’ve contributed.
+            </h2>
+            <p className="font-sans text-xs sm:text-sm md:text-base text-[#686868] leading-relaxed font-light">
+              Research, design, and cultural storytelling across academic and community-focused work.
+            </p>
+          </div>
+
+          {/* FIVE EDITORIAL EXPERIENCE ROWS */}
+          <div className="w-full border-t border-b border-[#D9D9D4] divide-y divide-[#D9D9D4]">
+            {EXPERIENCES.map((exp, index) => (
+              <motion.div
+                key={exp.id}
+                initial={prefersReducedMotion ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.15 }}
+                transition={{
+                  duration: prefersReducedMotion ? 0 : 0.4,
+                  delay: prefersReducedMotion ? 0 : index * 0.08,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+                className="group relative w-full py-6 md:py-7 transition-all duration-350 cursor-default overflow-hidden"
+              >
+                {/* Thin animated colored accent line on hover */}
+                <div
+                  aria-hidden="true"
+                  className="absolute top-0 left-0 h-[2px] w-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out origin-left pointer-events-none z-10"
+                  style={{ backgroundColor: exp.accentColor }}
+                />
+
+                {/* SVG Subject Motion in background */}
+                {renderExperienceSVG(exp.id, exp.accentColor)}
+
+                {/* DESKTOP LAYOUT (md and above) */}
+                <div className="hidden md:grid md:grid-cols-12 md:gap-6 md:items-start relative z-10">
+                  {/* Column 1: Keyword */}
+                  <div className="md:col-span-2 pt-1">
+                    <span className="font-mono text-[0.72rem] uppercase tracking-[0.2em] text-[#686868] font-bold block">
+                      {exp.keyword}
+                    </span>
+                  </div>
+
+                  {/* Column 2: Number */}
+                  <div className="md:col-span-1 pt-0.5">
+                    <span className="font-serif text-base font-bold text-[#888888] group-hover:translate-x-1 group-hover:text-[#111111] transition-all duration-350 block">
+                      {exp.num}
+                    </span>
+                  </div>
+
+                  {/* Column 3: Role title, Organization & Dates / Metadata */}
+                  <div className="md:col-span-4 space-y-1.5">
+                    <h3 className="font-serif text-[clamp(1.2rem,1.8vw,1.8rem)] font-semibold text-[#111111] tracking-tight leading-snug group-hover:translate-x-2 transition-transform duration-350 ease-out">
+                      {exp.role}
+                    </h3>
+                    <p className="font-sans text-[0.88rem] text-[#555555] font-normal leading-snug">
+                      {exp.organization}
+                    </p>
+                    <div className="flex flex-wrap items-center gap-x-2 text-[0.78rem] text-[#777777] font-mono pt-0.5">
+                      <span>{exp.dates}</span>
+                      {exp.employmentType && (
+                        <>
+                          <span>·</span>
+                          <span>{exp.employmentType}</span>
+                        </>
+                      )}
+                      {exp.location && (
+                        <>
+                          <span>·</span>
+                          <span>{exp.location}</span>
+                        </>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Column 4: Description */}
+                  <div className="md:col-span-5 pt-0.5">
+                    <p className="font-sans text-[0.92rem] text-[#333333] font-light leading-relaxed">
+                      {exp.description}
+                    </p>
+                  </div>
+                </div>
+
+                {/* TABLET & MOBILE LAYOUT (< md) */}
+                <div className="md:hidden flex flex-col space-y-2.5 relative z-10">
+                  <div className="flex items-center justify-between font-mono text-[0.72rem] uppercase tracking-[0.2em] text-[#686868]">
+                    <span className="font-bold text-[#111111]">{exp.keyword}</span>
+                    <span className="text-[#888888] font-serif font-bold">{exp.num}</span>
+                  </div>
+
+                  <div className="space-y-1">
+                    <h3 className="font-serif text-lg font-semibold text-[#111111] leading-snug">
+                      {exp.role}
+                    </h3>
+                    <p className="font-sans text-xs text-[#555555] font-normal">
+                      {exp.organization}
+                    </p>
+                    <div className="flex flex-wrap items-center gap-x-1.5 text-[0.75rem] text-[#777777] font-mono pt-0.5">
+                      <span>{exp.dates}</span>
+                      {exp.employmentType && <span>· {exp.employmentType}</span>}
+                      {exp.location && <span>· {exp.location}</span>}
+                    </div>
+                  </div>
+
+                  <p className="font-sans text-xs sm:text-sm text-[#333333] font-light leading-relaxed pt-1">
+                    {exp.description}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </section>
+
+        {/* 3. BEYOND WORK / PERSONAL INDEX TRANSITION */}
+        <section aria-label="Beyond Work Intro" className="pt-12">
+          {/* Subtle accent line transition */}
+          <div className="w-12 h-[2px] bg-[#D9D9D4] mb-8" />
+
+          <div className="space-y-2 max-w-3xl border-b border-[#D9D9D4] pb-6">
+            <span className="font-sans text-[10px] sm:text-xs uppercase tracking-[0.35em] text-[#686868] font-bold block">
+              BEYOND WORK
+            </span>
+            <h2 className="font-serif font-bold text-2xl sm:text-3xl md:text-4xl tracking-tight text-[#111111]">
+              The personal index.
+            </h2>
+            <p className="font-sans text-xs sm:text-sm md:text-base text-[#686868] leading-relaxed font-light">
+              What keeps me curious, grounded, and away from the screen.
+            </p>
+          </div>
+        </section>
+
+        {/* 4. SIX EXISTING HOBBY INDEX ROWS */}
+        <section aria-label="A Personal Index - Beyond the Portfolio" className="pt-2">
           <div className="w-full flex flex-col divide-y-0 shadow-sm rounded-none overflow-hidden">
-            {ROWS.map((row, index) => {
+            {HOBBY_ROWS.map((row, index) => {
               const isHovered = hoveredRowId === row.id;
               const currentBg = isHovered && !prefersReducedMotion ? row.bgHover : row.bgDefault;
 
@@ -376,9 +688,9 @@ export default function AboutPage() {
                       {/* Title & Personal Sentence Block */}
                       <div className="space-y-1.5 flex-1">
                         <div className="relative inline-block">
-                          <h2 className="font-serif font-bold text-[clamp(2.4rem,5vw,5.5rem)] leading-none tracking-tight transition-transform duration-400 ease-out md:group-hover:translate-x-4">
+                          <h3 className="font-serif font-bold text-[clamp(2.4rem,5vw,5.5rem)] leading-none tracking-tight transition-transform duration-400 ease-out md:group-hover:translate-x-4">
                             {row.title}
-                          </h2>
+                          </h3>
 
                           {/* Writer underline motion */}
                           {row.rowType === "writer" &&
@@ -425,8 +737,8 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Navigation Call-to-action */}
-        <section className="pt-10 border-t border-[#E8E8E2] flex flex-col sm:flex-row items-center justify-between gap-6">
+        {/* 5. NAVIGATION CALL TO ACTION */}
+        <section className="pt-10 border-t border-[#D9D9D4] flex flex-col sm:flex-row items-center justify-between gap-6">
           <button
             onClick={handleBackToProjects}
             className="group inline-flex items-center space-x-2 font-sans text-xs uppercase tracking-[0.2em] text-[#686868] hover:text-[#111111] transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#111111] rounded-sm py-1"
@@ -450,7 +762,7 @@ export default function AboutPage() {
           </button>
         </section>
 
-        {/* Contact Section Component */}
+        {/* 6. CONTACT SECTION FOOTER */}
         <div className="pt-8">
           <ContactSection />
         </div>

@@ -174,8 +174,7 @@ export default function Navbar({ currentPath, onNavigate }: NavbarProps) {
     activePath.includes("bhavnagar-heritage") ||
     activePath.includes("pineapple-health") ||
     activePath.includes("pineapple-healthcare") ||
-    activePath.includes("dark-patterns") ||
-    activePath.includes("about");
+    activePath.includes("dark-patterns");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -229,7 +228,7 @@ export default function Navbar({ currentPath, onNavigate }: NavbarProps) {
   };
 
   const navItems = [
-    { id: "about", label: "ABOUT", path: "/about" },
+    { id: "about", label: "ME.", path: "/about" },
     { id: "projects", label: "WORK", path: "/#projects" },
     { id: "connect", label: "REACH OUT", path: "/#connect" },
   ];

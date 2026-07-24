@@ -1,70 +1,55 @@
 ========================================================================
-ANISHA SAMA | SENIOR UX DESIGNER & RESEARCHER
+ANISHA SAMA
+Chicago, IL · LinkedIn: linkedin.com · Email: anisha.a.sama@gmail.com · Portfolio: anishasama.com
 ========================================================================
-Email: anishasama8687@gmail.com
-Location: Chicago, IL (Work timezone: America/Chicago)
-Portfolio: https://anishasama.ux
-------------------------------------------------------------------------
 
-PROFESSIONAL SUMMARY
-Senior UX Designer and Researcher specializing in behavioral design, 
-information architecture, and data-driven product strategy. Dedicated 
-to bridging the gap between rigorous cognitive research and high-fidelity 
-minimalist design. Proven track record of de-risking product decisions 
-and shipping products with measurable user engagement and accessibility standards.
+SUMMARY
+UX Designer pursuing an M.S. in Human-Computer Interaction at DePaul University, with hands-on experience across the end-to-end design process, from user research and prototyping to applying GenAI in product and interaction design. Comfortable moving between Figma prototyping, user interviews, usability testing, and tree testing, and turning research into wireframes and interaction flows for consumer-facing products. Looking to bring that research-to-design range to a role designing intuitive, industry-leading experiences.
 
 ------------------------------------------------------------------------
-CORE EXPERTISE & SKILLS
+EXPERIENCE
 ------------------------------------------------------------------------
-- RESEARCH METHODOLOGIES: User Interviews, Cognitive Walkthroughs, Eye Tracking,
-  Usability Testing, Heuristic Evaluation, A/B Testing, Eye Tracking, Task Analysis
-- DESIGN & CRAFT: High-Fidelity Interface Design, Interactive Prototyping,
-  Design Systems, Grid Systems, Typography, WCAG 2.2 AA Accessibility (A11y)
-- TECHNICAL TOOLKIT: Figma, React, Vite, GSAP ScrollTrigger, Lenis Smooth Scroll,
-  Tailwind CSS, Hotjar Analytics, Optimal Workshop
+DePaul University - Graduate Research Assistant - RAISE Lab (Dec 2025 - Present)
+• Research dark patterns in generative AI systems, examining how LLM interfaces shape user trust, transparency, autonomy, and decision-making for diverse users.
+• Conduct product audits and literature synthesis across AI tools, translating findings into interaction design recommendations for clearer prompts, refusal patterns, recovery flows, and autonomy safeguards.
+• Designed scenario-based study materials and supported moderated usability/interview sessions; synthesized findings from 6 participants on confidence, context-window awareness, and recovery behavior.
+• Managed research operations through Notion task boards, agendas, notes, recruitment materials, and cross-functional coordination with faculty, PhD, and MS researchers.
 
-------------------------------------------------------------------------
-FEATURED CASE STUDIES
-------------------------------------------------------------------------
+Indian National Trust for Art and Cultural Heritage (INTACH) - Visual Communication Designer (2022 - 2025)
+• Directed a multi-episode heritage video mini-series, leading the process end to end from concept and scripting through shooting and edit, translating cultural research into visual storytelling for public audiences.
+• Designed and helped launch a multilingual heritage website for Bhavnagar Heritage, structuring information architecture and interaction patterns and visual layout to make historical content accessible across language and literacy levels.
+• Produced print campaigns and magazine articles communicating heritage preservation initiatives, applying consistent visual identity across formats for public and stakeholder audiences.
 
-01. AURA HABIT TRACKER (Behavioral Design)
-------------------------------------------
-Designed a mindful habit-building workspace using cognitive psychology principles.
-- Identified guilt-induced churn models from a sample of 15 deep user interviews.
-- Introduced planned "forgiveness tokens" to mitigate streak abandonment fatigue.
-- METRIC: +64% increase in 90-day active user retention, 45% reduction in anxiety.
-
-02. ZENITH CHECKOUT (Conversion & Interaction Design)
------------------------------------------------------
-Consolidated complex e-commerce billing workflows into a single biometric action.
-- Mitigated visual form distraction by hiding global navigation in high-intent states.
-- Re-architected inputs using progressive disclosure grids and inline validations.
-- METRIC: -43 seconds saved per mobile transaction, +28% checkout conversion surge.
-
-03. NOVA HEALTH DASHBOARD (Healthcare IA & Empathetic Design)
--------------------------------------------------------------
-Engineered a plain-language wellness and physiological chronic care portal.
-- Co-designed alongside 10 chronic disease patients and clinical cardiologists.
-- Substituted alarming red metrics with friendly, conversational status summaries.
-- METRIC: -40% drop in patient dashboard-induced anxiety, 97% self-care compliance.
+The Seven IT Solutions (EINSCO) - User Experience Designer (Feb 2021 - Jan 2022)
+• Designed user flows, wireframes, and interactive prototypes in Figma for client digital products, applying interaction design and user-centered design methods across the end-to-end design process from concept through handoff.
+• Collaborated with developers and stakeholders to translate business requirements into visual design solutions, iterating on layouts based on usability feedback.
 
 ------------------------------------------------------------------------
-PROFESSIONAL EXPERIENCE
+SELECTED DESIGN PROJECTS
 ------------------------------------------------------------------------
-SENIOR PRODUCT DESIGNER & RESEARCHER | Vanguard UX Studios (Chicago)
-2023 - Present
-- Lead research operations, heuristic evaluations, and high-fidelity UI design 
-  for high-profile B2B and consumer web/mobile products.
-- Spearheaded design systems that improved frontend component alignment by 35%.
+Podify - UX/UI Product Design Case Study (2026)
+• Designed 25+ Figma screens for a music/community product, including onboarding, discovery, dashboard, and content interaction flows using components, variants, and Auto Layout.
+• Iterated through 3 prototype rounds from 5 user-feedback sessions, improving visual hierarchy, CTA clarity, navigation, and the storytelling arc of the product experience.
 
-UX DESIGNER | Chicago digital systems
-2021 - 2023
-- Conducted user interviews and spatial interactive research for smart transportation systems.
-- Executed A/B testing cycles improving signup funnels by 18%.
+Pineapple - Healthcare Access & Scheduling App (2025)
+• Co-designed a healthcare access and appointment-scheduling experience; created user flows, wireframes, and interactive prototypes for a clearer patient journey.
+• Supported 4 moderated usability tests and identified 12+ friction points, then translated findings into revised screens, clearer labels, and simplified task flows.
+
+Tech Careers & AI - UX Research Study (2026)
+• Co-conducted observation sessions with 9 participants and interviews with 8 participants to understand how early-career job seekers navigate an AI-disrupted tech job market.
+• Synthesized findings using the AEIOU framework and affinity diagramming, translating patterns into 2 personas and experience maps representing distinct job-seeker needs, and a priority matrix ranking 8 features by impact and feasibility to guide the design direction.
+
+------------------------------------------------------------------------
+TECHNICAL SKILLS
+------------------------------------------------------------------------
+Design: UX Design, Interaction Design, Visual Design, Information Architecture, Wireframing, Prototyping, Design Systems, Accessibility (WCAG), Content Strategy
+Research: User Interviews, Moderated Usability Testing, Think-Aloud Protocol, Tree Testing, Card Sorting, Heuristic Evaluation, Affinity Mapping, Thematic Analysis
+Tools: Figma, FigJam, Miro, Atlas.ti, Qualtrics, Axure RP, Adobe Photoshop, Adobe Illustrator, Notion, Microsoft Teams, HTML/CSS, Generative AI Prototyping Tools
+Strengths: Customer-Centered Storytelling, Design Rationale, Stakeholder Communication, Ambiguity, Responsible AI, Cross-Functional Collaboration
 
 ------------------------------------------------------------------------
 EDUCATION
 ------------------------------------------------------------------------
-B.S. in Cognitive Science & Human-Computer Interaction
-University of Illinois at Urbana-Champaign (UIUC)
+M.S Human Computer Interaction – DePaul University | GPA: 3.80/4.0 (June 2027)
+B.E Electronics and Communications Engineering – Gujarat Technological University | GPA: 8.0/10.0
 ========================================================================

@@ -379,7 +379,7 @@ export default function ContactSection() {
 
                 {/* LinkedIn */}
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/anisha-sama-"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full flex items-center justify-between py-3.5 px-4 sm:px-5 bg-transparent border border-neutral-700/80 hover:border-white hover:bg-white text-neutral-200 hover:text-[#050505] rounded-xl font-sans text-[14px] sm:text-[15px] font-medium transition-all duration-200 group"

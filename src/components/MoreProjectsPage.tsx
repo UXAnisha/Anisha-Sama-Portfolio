@@ -83,51 +83,47 @@ export default function MoreProjectsPage() {
       ),
     },
     {
-      id: "podify",
+      id: "pineapple-health",
       number: "02",
-      title: "Podify",
-      category: "Interface Design · User Experience · Mobile App",
+      title: "Pineapple Health",
+      category: "Academic Team Project · Healthcare UX · HCI 440",
       description:
-        "A podcast experience designed to make discovering, organizing, and listening to favorite shows more intuitive.",
-      path: "/projects/podify",
-      accentColor: "#8A73B9", // Muted violet
-      imageBg: "bg-[#14121A]",
+        "Simplifying appointment booking, insurance decisions, and cost visibility within one connected healthcare experience.",
+      path: "/projects/pineapple-health",
+      accentColor: "#388E9C", // Healthcare teal
+      imageBg: "bg-[#0F1B1F]",
       renderVisual: (
-        <div className="w-full h-full min-h-[220px] sm:min-h-[260px] md:min-h-[300px] flex items-center justify-center p-6 relative overflow-hidden bg-gradient-to-br from-[#1C1827] to-[#0D0B12]">
-          {/* Authentic Podify Mobile Mockup Banner */}
-          <div className="w-full max-w-sm bg-[#171422] rounded-2xl border border-[#8A73B9]/30 shadow-2xl p-4 flex flex-col space-y-3 transform transition-transform duration-500 ease-out group-hover:scale-[1.03]">
-            <div className="flex items-center justify-between border-b border-[#8A73B9]/20 pb-2">
+        <div className="w-full h-full min-h-[220px] sm:min-h-[260px] md:min-h-[300px] flex items-center justify-center p-6 relative overflow-hidden bg-gradient-to-br from-[#122329] to-[#0A1317]">
+          {/* Authentic Pineapple Health Mobile Mockup Banner */}
+          <div className="w-full max-w-sm bg-[#132228] rounded-2xl border border-[#388E9C]/30 shadow-2xl p-4 flex flex-col space-y-3 transform transition-transform duration-500 ease-out group-hover:scale-[1.03]">
+            <div className="flex items-center justify-between border-b border-[#388E9C]/20 pb-2">
               <div className="flex items-center space-x-2">
-                <div className="w-7 h-7 rounded-full bg-[#8A73B9] flex items-center justify-center font-bold text-white text-xs">
+                <div className="w-7 h-7 rounded-full bg-[#388E9C] flex items-center justify-center font-bold text-white text-xs">
                   P
                 </div>
                 <div>
-                  <h5 className="font-sans text-xs font-bold text-white">Podify Experience</h5>
-                  <p className="font-sans text-[10px] text-[#8A73B9] font-medium font-mono">Discovery & Queue</p>
+                  <h5 className="font-sans text-xs font-bold text-white">Pineapple Health</h5>
+                  <p className="font-sans text-[10px] text-[#388E9C] font-medium font-mono">Healthcare &amp; Scheduling</p>
                 </div>
               </div>
-              <span className="px-2 py-0.5 rounded-full bg-[#8A73B9]/20 text-[#8A73B9] font-mono text-[9px] uppercase font-bold tracking-wider">
-                Now Playing
+              <span className="px-2 py-0.5 rounded-full bg-[#388E9C]/20 text-[#388E9C] font-mono text-[9px] uppercase font-bold tracking-wider">
+                In-Network
               </span>
             </div>
-            {/* Podcast Player Bar Visual */}
-            <div className="bg-[#231F33] p-3 rounded-lg border border-neutral-800 space-y-2">
-              <div className="flex justify-between items-center">
-                <div>
-                  <h6 className="text-xs font-bold text-white font-serif">Design & Thought Ep. 42</h6>
-                  <p className="text-[10px] text-neutral-400">Conversations on Technology</p>
-                </div>
-                <div className="w-6 h-6 rounded-full bg-[#8A73B9] text-white flex items-center justify-center text-[10px]">
-                  ▶
-                </div>
+            {/* Appointment & Cost Estimates Visual */}
+            <div className="grid grid-cols-2 gap-2">
+              <div className="bg-[#1A2D35] p-2.5 rounded-lg border border-neutral-800 space-y-1">
+                <span className="text-[10px] text-neutral-400 font-sans block">Primary Care Booking</span>
+                <p className="text-xs font-bold text-white font-serif">Dr. Sarah Lin, MD</p>
+                <div className="text-[9px] text-[#388E9C] font-mono">Thu, Aug 14 • $20 Copay</div>
               </div>
-              {/* Progress Bar */}
-              <div className="w-full bg-neutral-800 h-1.5 rounded-full overflow-hidden">
-                <div className="bg-[#8A73B9] h-full w-2/3 rounded-full" />
-              </div>
-              <div className="flex justify-between text-[9px] font-mono text-neutral-500">
-                <span>18:24</span>
-                <span>28:00</span>
+              <div className="bg-[#1A2D35] p-2.5 rounded-lg border border-neutral-800 space-y-1 flex flex-col justify-between">
+                <span className="text-[10px] text-neutral-400 font-sans block">Insurance Verification</span>
+                <div className="flex items-center space-x-1.5">
+                  <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                  <span className="text-[10px] text-white font-medium">Verified In-Network</span>
+                </div>
+                <div className="text-[9px] text-neutral-400 font-mono">100% Coverage</div>
               </div>
             </div>
           </div>

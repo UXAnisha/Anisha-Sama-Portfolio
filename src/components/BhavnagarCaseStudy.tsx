@@ -4,9 +4,6 @@ import { motion } from "motion/react";
 import { useNavigate } from "react-router-dom";
 
 import heroShowcaseImg from "../assets/images/regenerated_image_1784761424040.png";
-import wireframe1Img from "../assets/images/regenerated_image_1784761607801.png";
-import wireframe2Img from "../assets/images/regenerated_image_1784761609679.png";
-import wireframe3Img from "../assets/images/regenerated_image_1784761610659.png";
 
 interface BhavnagarCaseStudyProps {
   onBackToProjects?: () => void;
@@ -757,14 +754,14 @@ export default function BhavnagarCaseStudy({ onBackToProjects, onBack }: Bhavnag
           </p>
         </section>
 
-        {/* SECTION 09 — STRUCTURING THE EXPERIENCE */}
-        <section className="space-y-10 scroll-mt-28">
+        {/* SECTION 08 — INFORMATION STRUCTURE */}
+        <section id="information-structure" className="space-y-10 scroll-mt-28">
           <div className="space-y-3">
-            <span className="font-sans text-[11px] uppercase tracking-[0.3em] text-[#858585] font-bold block">
-              08 / EARLY STRUCTURE
+            <span className="font-sans text-[11px] uppercase tracking-[0.3em] text-[#6B1C23] font-bold block">
+              08 / INFORMATION STRUCTURE
             </span>
-            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-normal text-[#111111] leading-tight max-w-3xl">
-              Establishing hierarchy before visual presentation.
+            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-normal text-[#6B1C23] leading-tight max-w-3xl">
+              Structuring the experience before styling the interface.
             </h2>
           </div>
 
@@ -777,47 +774,53 @@ export default function BhavnagarCaseStudy({ onBackToProjects, onBack }: Bhavnag
             </p>
           </div>
 
-          {/* 3 Wireframes Grid */}
+          {/* Thin maroon horizontal divider below introductory text */}
+          <div className="w-full h-[1px] bg-[#6B1C23]/25" />
+
+          {/* 3 Image Spaces Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="space-y-2">
-              <div className="bg-[#F1F1EC] border border-[#D9D9D4] rounded-lg overflow-hidden shadow-sm group">
-                <img
-                  src={wireframe1Img}
-                  alt="Homepage Wireframe - Bhavnagar Heritage"
-                  referrerPolicy="no-referrer"
-                  style={{ objectFit: 'contain', objectPosition: 'center' }}
-                  className="w-full h-auto object-contain rounded-lg transition-transform duration-300 group-hover:scale-[1.02]"
-                />
+            <div className="space-y-3">
+              {/* Homepage Image */}
+              <div
+                id="bhavnagar-homepage-image-slot"
+                className="w-full aspect-[4/3] min-h-[220px] bg-[#F1F1EC] border border-[#6B1C23] rounded-none flex items-center justify-center p-6 text-center transition-all"
+                style={{ objectFit: 'contain' }}
+              >
+                <span className="font-sans text-xs uppercase tracking-wider text-[#6B1C23] font-medium">
+                  Homepage Image
+                </span>
               </div>
               <span className="font-sans text-xs text-[#111111] font-medium block pt-1">
                 1. Homepage Wireframe
               </span>
             </div>
 
-            <div className="space-y-2">
-              <div className="bg-[#F1F1EC] border border-[#D9D9D4] rounded-lg overflow-hidden shadow-sm group">
-                <img
-                  src={wireframe2Img}
-                  alt="Heritage Landmark Detail Wireframe - Bhavnagar Heritage"
-                  referrerPolicy="no-referrer"
-                  style={{ objectFit: 'contain', objectPosition: 'center' }}
-                  className="w-full h-auto object-contain rounded-lg transition-transform duration-300 group-hover:scale-[1.02]"
-                />
+            <div className="space-y-3">
+              {/* Heritage Landmark Detail Image */}
+              <div
+                id="bhavnagar-landmark-image-slot"
+                className="w-full aspect-[4/3] min-h-[220px] bg-[#F1F1EC] border-2 border-[#6B1C23] rounded-none flex items-center justify-center p-6 text-center transition-all"
+                style={{ objectFit: 'contain' }}
+              >
+                <span className="font-sans text-xs uppercase tracking-wider text-[#6B1C23] font-medium">
+                  Heritage Landmark Detail Image
+                </span>
               </div>
               <span className="font-sans text-xs text-[#111111] font-medium block pt-1">
                 2. Heritage Landmark Detail Wireframe
               </span>
             </div>
 
-            <div className="space-y-2">
-              <div className="bg-[#F1F1EC] border border-[#D9D9D4] rounded-lg overflow-hidden shadow-sm group">
-                <img
-                  src={wireframe3Img}
-                  alt="Magazine Archive Wireframe - Bhavnagar Heritage"
-                  referrerPolicy="no-referrer"
-                  style={{ objectFit: 'contain', objectPosition: 'center' }}
-                  className="w-full h-auto object-contain rounded-lg transition-transform duration-300 group-hover:scale-[1.02]"
-                />
+            <div className="space-y-3">
+              {/* Magazine Archive Image */}
+              <div
+                id="bhavnagar-magazine-image-slot"
+                className="w-full aspect-[4/3] bg-[#F1F1EC] border border-[#6B1C23] rounded-none flex items-center justify-center p-6 text-center transition-all"
+                style={{ objectFit: 'contain' }}
+              >
+                <span className="font-sans text-xs uppercase tracking-wider text-[#6B1C23] font-medium">
+                  Magazine Archive Image
+                </span>
               </div>
               <span className="font-sans text-xs text-[#111111] font-medium block pt-1">
                 3. Magazine Archive Wireframe

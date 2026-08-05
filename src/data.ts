@@ -53,28 +53,28 @@ export const projectsData: Project[] = [
   },
   {
     id: "03",
-    title: "Pineapple Health",
-    subtitle: "Simplifying appointment booking, insurance decisions, and cost visibility within one connected healthcare experience.",
-    designFocus: "A mobile healthcare concept translating research with Chicago healthcare users into a tested interactive prototype.",
-    researchInsight: "Booking healthcare involves more than selecting an appointment; users require network, referral, and out-of-pocket cost transparency.",
-    imageSeed: "healthcare",
-    tags: ["Academic Team Project", "Healthcare UX", "HCI 440"],
-    challenge: "Healthcare information is distributed across disconnected systems, making it difficult to compare providers, verify coverage, anticipate costs, and schedule care.",
+    title: "Podify",
+    subtitle: "A podcast experience designed to make discovering, organizing, and listening to favorite shows more intuitive.",
+    designFocus: "A dedicated podcast application focusing on seamless episode queueing, personalized discovery, and intuitive category browsing.",
+    researchInsight: "Embedding podcasts inside general audio streaming apps creates cluttered navigation. A dedicated podcast workspace significantly enhances content discovery and listening focus.",
+    imageSeed: "podify",
+    tags: ["Interface Design", "User Experience", "Mobile App"],
+    challenge: "Many audio streaming platforms mix music and podcasts together, creating cluttered interfaces and buried queue controls. Podify addresses this with a specialized environment designed purely for podcast discovery and queue management.",
     process: [
-      "Conducted 12 contextual interviews with Chicago healthcare users.",
-      "Synthesized findings via affinity mapping into 5 key themes and 3 research-based personas.",
-      "Developed functional requirements, user flows, and low-fidelity wireframes.",
-      "Evaluated experience via cognitive walkthroughs and 4 moderated remote usability tests."
+      "Audited user interaction flows across existing audio and podcast applications.",
+      "Developed custom wireframes for episode queueing and category navigation.",
+      "Created high-fidelity interactive prototypes with custom visual soundwave branding.",
+      "Validated layout hierarchy and player accessibility across mobile viewports."
     ],
     metrics: [
-      "12 Contextual interviews completed",
-      "4 Moderated remote usability tests",
-      "1 Interactive mobile prototype"
+      "1 Dedicated podcast discovery architecture",
+      "25+ Custom Figma component screens",
+      "100% Focused mobile listening experience"
     ],
-    solution: "A mobile healthcare prototype connecting provider discovery, insurance network verification, cost estimates, referral guidance, and appointment booking.",
-    methods: "Contextual Interviews · Affinity Mapping · Wireframing · Interactive Prototyping · Usability Testing",
-    outcome: "An academic team project demonstrating how healthcare discovery and booking can be integrated into one understandable mobile experience.",
-    path: "/projects/pineapple-health"
+    solution: "A mobile application tailored exclusively to podcast listeners with clean discovery feeds, responsive player controls, and smart queue management.",
+    methods: "Interface Design · Wireframing · Interactive Prototyping · Visual Identity",
+    outcome: "A dedicated mobile concept that simplifies podcast discovery, playlist curation, and listening interactions.",
+    path: "/projects/podify"
   }
 ];
 

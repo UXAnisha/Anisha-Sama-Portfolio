@@ -98,6 +98,19 @@ export default function PodifyCaseStudy({ onBackToProjects, onBack }: PodifyCase
           </div>
         </div>
 
+        {/* HERO OVERVIEW IMAGE */}
+        <div className="space-y-3 pt-2">
+          <img
+            src="/assets/podify-01-mobile-app-overview.png"
+            alt="Overview of Podify mobile interfaces showing discovery, podcast details, home, playback, and saved podcasts"
+            style={{ width: "100%", height: "auto", objectFit: "contain" }}
+            className="w-full h-auto object-contain rounded-none border border-[#8A73B9]/20"
+          />
+          <p className="font-sans text-xs sm:text-sm text-[#686868] italic text-center">
+            Final mobile interface showing Podify’s discovery, library, podcast details, and playback experiences.
+          </p>
+        </div>
+
         {/* SECTION 01 — PROJECT OVERVIEW */}
         <section className="space-y-8 border-t border-[#8A73B9]/20 pt-12">
           <div className="space-y-3">

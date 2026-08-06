@@ -19,6 +19,7 @@ import MoreProjectsPage from "./components/MoreProjectsPage";
 import CookmateCaseStudy from "./components/CookmateCaseStudy";
 import PodifyCaseStudy from "./components/PodifyCaseStudy";
 import VisualNarrativesCaseStudy from "./components/VisualNarrativesCaseStudy";
+import GestureCanvasPage from "./components/GestureCanvasPage";
 import { projectsData } from "./data";
 import { Project } from "./types";
 
@@ -282,6 +283,10 @@ export default function App() {
             <Route
               path="/projects/visual-narratives"
               element={<VisualNarrativesCaseStudy onBackToProjects={navigateToProjects} onBack={navigateToProjects} />}
+            />
+            <Route
+              path="/lab"
+              element={<GestureCanvasPage />}
             />
             <Route
               path="/work/:slug"

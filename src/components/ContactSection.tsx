@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import { Sparkles, Mail, FileText, Linkedin, Check, Copy, ArrowUpRight, Hand } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import JSConfetti from "js-confetti";
 
 export default function ContactSection() {
+  const navigate = useNavigate();
   const [hasScrolledIntoView, setHasScrolledIntoView] = useState(false);
   const [showCelebrationHeadline, setShowCelebrationHeadline] = useState(false);
   const [isTypingDots, setIsTypingDots] = useState(false);
@@ -225,8 +227,8 @@ export default function ContactSection() {
 
   const handleResumeDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Anisha_Sama_UX_Resume.txt";
-    link.download = "Anisha_Sama_UX_Resume.txt";
+    link.href = "/Anisha_Sama_UX_Resume.pdf";
+    link.download = "Anisha_Sama_UX_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -413,6 +415,25 @@ export default function ContactSection() {
               >
                 <Hand className={`w-3.5 h-3.5 ${highFiveGiven ? "text-emerald-400" : "text-neutral-400"}`} />
                 <span>{highFiveGiven ? "High-Five Logged! 🙏" : `High-Five (${highFiveCount})`}</span>
+              </button>
+            </div>
+
+            {/* Gesture Canvas Entry Point */}
+            <div className="pt-2">
+              <button
+                type="button"
+                onClick={() => navigate("/lab")}
+                className="w-full flex items-center justify-between py-3.5 px-4 sm:px-5 bg-transparent border border-neutral-700/80 hover:border-white hover:bg-white text-neutral-200 hover:text-[#050505] rounded-xl font-sans transition-all duration-200 group text-left cursor-pointer"
+              >
+                <div className="flex flex-col sm:flex-row sm:items-center space-y-0.5 sm:space-y-0 sm:space-x-3 min-w-0 truncate">
+                  <span className="text-[14px] sm:text-[15px] font-medium text-neutral-200 group-hover:text-[#050505] transition-colors truncate">
+                    Wave Hello 👋
+                  </span>
+                  <span className="text-xs text-neutral-400 group-hover:text-neutral-700 transition-colors truncate">
+                    A little interactive experiment — camera required.
+                  </span>
+                </div>
+                <ArrowUpRight className="w-4 h-4 text-neutral-500 group-hover:text-[#050505] transition-colors flex-shrink-0 ml-2" strokeWidth={2.2} />
               </button>
             </div>
 

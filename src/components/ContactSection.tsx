@@ -16,7 +16,7 @@ export default function ContactSection() {
 
   // Contact actions state
   const [copiedEmail, setCopiedEmail] = useState(false);
-  const [downloadedResume, setDownloadedResume] = useState(false);
+ 
   const [highFiveCount, setHighFiveCount] = useState(14);
   const [highFiveGiven, setHighFiveGiven] = useState(false);
 
@@ -225,25 +225,7 @@ export default function ContactSection() {
     setTimeout(() => setCopiedEmail(false), 2000);
   };
 
-  const handleResumeDownload = () => {
-  window.open(
-    "/Updated%20CV%20~Anisha%20.pdf",
-    "_blank",
-    "noopener,noreferrer"
-  );
-
-  setDownloadedResume(true);
-  setTimeout(() => setDownloadedResume(false), 2000);
-};
-    const link = document.createElement("a");
-    link.href = "/Anisha_Sama_UX_Resume.pdf";
-    link.download = "Anisha_Sama_UX_Resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    setDownloadedResume(true);
-    setTimeout(() => setDownloadedResume(false), 2000);
-  };
+ 
 
   const handleHighFive = () => {
     if (!highFiveGiven) {

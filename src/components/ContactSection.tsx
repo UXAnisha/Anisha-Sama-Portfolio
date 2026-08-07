@@ -226,6 +226,15 @@ export default function ContactSection() {
   };
 
   const handleResumeDownload = () => {
+  window.open(
+    "/Updated%20CV%20~Anisha%20.pdf",
+    "_blank",
+    "noopener,noreferrer"
+  );
+
+  setDownloadedResume(true);
+  setTimeout(() => setDownloadedResume(false), 2000);
+};
     const link = document.createElement("a");
     link.href = "/Anisha_Sama_UX_Resume.pdf";
     link.download = "Anisha_Sama_UX_Resume.pdf";
@@ -359,7 +368,7 @@ export default function ContactSection() {
               {/* SECONDARY BUTTONS — Download CV and LinkedIn */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-0.5">
                 
-                {/* Download CV */}
+                {/*View CV */}
                 <div className="flex flex-col space-y-1">
                   <button
                     type="button"

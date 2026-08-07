@@ -368,25 +368,28 @@ export default function ContactSection() {
               {/* SECONDARY BUTTONS — Download CV and LinkedIn */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-0.5">
                 
-                {/*View CV */}
-                <div className="flex flex-col space-y-1">
-                  <button
-                    type="button"
-                    onClick={handleResumeDownload}
-                    className="w-full flex items-center justify-between py-3.5 px-4 sm:px-5 bg-transparent border border-neutral-700/80 hover:border-white hover:bg-white text-neutral-200 hover:text-[#050505] rounded-xl font-sans text-[14px] sm:text-[15px] font-medium transition-all duration-200 group text-left cursor-pointer"
-                  >
-                    <div className="flex items-center space-x-3 truncate">
-                      <FileText className="w-4.5 h-4.5 text-neutral-400 group-hover:text-[#050505] transition-colors flex-shrink-0" strokeWidth={2.2} />
-                      <span className="truncate">Download CV</span>
-                    </div>
-                    <ArrowUpRight className="w-4 h-4 text-neutral-500 group-hover:text-[#050505] transition-colors flex-shrink-0 ml-2" strokeWidth={2.2} />
-                  </button>
-                  {downloadedResume && (
-                    <span className="text-xs font-sans text-emerald-400 px-1">
-                      Download started!
-                    </span>
-                  )}
-                </div>
+              {/* View CV */}
+<div className="flex flex-col space-y-1">
+  <a
+    href="/Updated%20CV%20~Anisha%20.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-full flex items-center justify-between py-3.5 px-4 sm:px-5 bg-transparent border border-neutral-700/80 hover:border-white hover:bg-white text-neutral-200 hover:text-[#050505] rounded-xl font-sans text-[14px] sm:text-[15px] font-medium transition-all duration-200 group text-left cursor-pointer"
+  >
+    <div className="flex items-center space-x-3 truncate">
+      <FileText
+        className="w-4.5 h-4.5 text-neutral-400 group-hover:text-[#050505] transition-colors flex-shrink-0"
+        strokeWidth={2.2}
+      />
+      <span className="truncate">View CV</span>
+    </div>
+
+    <ArrowUpRight
+      className="w-4 h-4 text-neutral-500 group-hover:text-[#050505] transition-colors flex-shrink-0 ml-2"
+      strokeWidth={2.2}
+    />
+  </a>
+</div>
 
                 {/* LinkedIn */}
                 <a
